@@ -14,10 +14,13 @@ A **Grasshopper-based parametric tool** for **automated generation of high-densi
 - Includes **multiple street/block patterns** for each scale
 
 ### ✅ Parametric Control
-- **Develpment intensity:**  
-  - Floor Area Ratio (**FAR**)/ Building Density (**Setback distance**)
+- **Planning Indicator:**  
+  - Floor area ratio 
+  - Building Density
 - **Morphological Controls:**  
-  - Secondary subdivision (**Length of parcel/Spacing between parcels**) / Building typology/ Building depth/width/Height Control 
+  - Secondary subdivision 
+  - Building typology
+  - Building depth/width/Height Control 
 
 ### ✅ Adaptive Logic
 - Automatically detects **plot geometry**
@@ -62,15 +65,15 @@ The plugin includes **three main Grasshopper clusters**:
 ---
 
 ## 🖼 Screenshots
-> **single block generator(1.5~4ha) **   
+> Small-Scale Block Generator   
 Example:  
 ![single block(1 5~4ha)](https://github.com/user-attachments/assets/0c7557ff-27e2-456c-a577-7c6cc4aac4a2)
 
-> **single block generator(4~9ha) **   
+> Medium-Scale Block Generator   
 Example:
 ![single block(4~9ha)](https://github.com/user-attachments/assets/b53a47dc-159e-4e3f-8baf-cd3fc5d8e985)
 
-> **multiple block generator **   
+> Large-Scale Composite Generator   
 Example:
 ![multiple block](https://github.com/user-attachments/assets/76d6ddb4-9a94-4c58-a10d-356a8a90e6bf)
 
@@ -87,6 +90,7 @@ Example:
 - Division of Parcels: **L(parcel),S(parcel)**
 - Building types (Courtyard, Slab, Tower) depth and width: **W(Tb),D(Tb),D(Cb),S(Cb)**
 - Tower height range:**Floor_Start_Tower, Floor_Step**
+- Distribution of Built& Open space: **Parcel_sel**
 
 >variables
 <img width="1191" height="641" alt="variables" src="https://github.com/user-attachments/assets/0aecb849-cf27-4da2-b335-acc0d39daa43" />
