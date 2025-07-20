@@ -1,7 +1,6 @@
 # 🏙 High-Density Office Block Generator for Grasshopper
 
 ![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![Grasshopper](https://img.shields.io/badge/platform-Grasshopper-green)
 
 A **Grasshopper-based parametric tool** for **automated generation of high-density office building layouts** across multiple plot scales. The generator automatically detects plot geometry and applies **context-sensitive patterns**, allowing designers to customize layouts through a wide range of **planning and morphological parameters**.
@@ -15,14 +14,10 @@ A **Grasshopper-based parametric tool** for **automated generation of high-densi
 - Includes **multiple street/block patterns** for each scale
 
 ### ✅ Parametric Control
-- **Planning Indicators:**  
-  - Floor Area Ratio (**FAR**)  
-  - Building coverage  
-  - Setbacks  
+- **Develpment intensity:**  
+  - Floor Area Ratio (**FAR**)/ Building Density (**Setback distance**)
 - **Morphological Controls:**  
-  - Secondary subdivision  
-  - Building depth/width  
-  - Tower size ranges  
+  - Secondary subdivision (**Length of parcel/Spacing between parcels**) / Building typology/ Building depth/width/Height Control 
 
 ### ✅ Adaptive Logic
 - Automatically detects **plot geometry**
@@ -36,7 +31,7 @@ The plugin includes **three main Grasshopper clusters**:
 1. **Small-Scale Block Generator**  
    - Plot size: **1–4 hectares**  
    - Includes **3 block pattern options**
-> **single block generator(1.5~4ha) **
+> Small-Scale Block Generator
 <img width="4111" height="1572" alt="single block( 4ha)" src="https://github.com/user-attachments/assets/e9d86660-7d6c-4776-bc64-c90dff609a83" />
 
 
@@ -44,14 +39,14 @@ The plugin includes **three main Grasshopper clusters**:
 2. **Medium-Scale Block Generator**  
    - Plot size: **4–9 hectares**  
    - Includes **3 block pattern options**
-> **single block generator(4~9ha) **
+> Medium-Scale Block Generator
 <img width="4037" height="1883" alt="single block(4 9ha)" src="https://github.com/user-attachments/assets/ab66e4d2-370c-4dc9-bf66-74d4b4a2606d" />
 
 
 3. **Large-Scale Composite Generator**  
    - Combines small plots into larger ones (**3×2 arrangement**)  
    - Adapts to **open space and buildable area** for **2 pattern options**
-> **multiple block generator **
+> Large-Scale Composite Generator
 <img width="4065" height="2016" alt="multiple block( 9ha)" src="https://github.com/user-attachments/assets/228f5aa7-edc5-409e-8b32-f4d87abc1678" />
 
 
@@ -60,9 +55,9 @@ The plugin includes **three main Grasshopper clusters**:
 ## 🛠 How to Use
 1. **Download and unzip** the repository  
 2. Open **Grasshopper in Rhino 8**  
-3. Load the corresponding **`.gh` definition**  
-4. **Input your plot boundary curve or grid size(x,y)**  
-5. **Adjust sliders** to generate and customize building layouts in real time  
+3. Load the corresponding **`Office Block Generator.gh` definition**  
+4. **Input your plot boundary curve by defining Set-edge points**  
+5. **Adjust grid size(x,y) by sliders** to generate and customize building layouts in real time  
 
 ---
 
@@ -86,13 +81,16 @@ Example:
 
 ### **Planning Indicators**
 - Floor Area Ratio (**FAR**)
-- Building coverage
-- Setback distances
+- Setback distances(**L(setback)**)
 
 ### **Morphological Controls**
-- Subdivision strategy
-- Building types (slab, tower) depth and width
-- Tower height range
+- Division of Parcels: **L(parcel),S(parcel)**
+- Building types (Courtyard, Slab, Tower) depth and width: **W(Tb),D(Tb),D(Cb),S(Cb)**
+- Tower height range:**Floor_Start_Tower, Floor_Step**
+
+>variables
+<img width="1191" height="641" alt="variables" src="https://github.com/user-attachments/assets/0aecb849-cf27-4da2-b335-acc0d39daa43" />
+
 
 ---
 
@@ -105,6 +103,7 @@ This project is licensed under the **[Creative Commons Attribution 4.0 Internati
 
 ## 📚 Citation
 If you use this work in research or publications, please cite:
+> Wusihala, W., & Wang, P. (2025). High-Density Office Block Generator for Grasshopper (Version 1.0.0) [Computer software]. GitHub. https://github.com/YourUsername/HighDensityOfficeMorphology
 
 Or see the [CITATION.cff](./CITATION.cff) file for more formats.
 
