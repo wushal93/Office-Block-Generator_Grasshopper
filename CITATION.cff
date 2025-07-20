@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Wusihala"
+  given-names: "Wusihala"
+- family-names: "Pan"
+  given-names: "Wang"
+title: "Office-Block-Generator_Grasshopper"
+version: 1.0.0
+date-released: 2025-07-20
+license: "CC-BY-4.0"
+url: "https://github.com/wushal93/Office-Block-Generator_Grasshopper"
+abstract: "A Grasshopper-based parametric tool for generating high-density office building layouts across multiple plot scales, with customizable planning indicators and morphological parameters."
+keywords:
+  - Grasshopper
+  - Urban Morphology
+  - Parametric Design
+  - High-Density Office
